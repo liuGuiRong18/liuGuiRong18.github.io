@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[浅谈用Hexo在GitHub搭建博客]]></title>
-    <url>%2F2017%2F12%2F04%2F%E6%B5%85%E8%B0%88%E7%94%A8Hexo%E5%9C%A8GitHub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%20%2F</url>
-    <content type="text"><![CDATA[Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <url>%2F2017%2F12%2F04%2F%E6%B5%85%E8%B0%88%E7%94%A8Hexo%E5%9C%A8GitHub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[&emsp;&emsp;我们可以在很多地方写技术博客，csdn ，简书，掘金等等,但是最近看到很多技术博主都是使用了Hexo搭建自己的博客，帅气逼人。Hexo是台湾大学生写了基于Node.js的静态博客程序。本文只介绍了hexo的静态网页直接放在GitHub Pages上面。这里没有前端基础开发朋友，不用担心不懂Node.js,只要你跟着下面的步骤走，你就能拥有一个牛逼哄哄的个人博客网站：ps：本文针对是mac用户； 前期准备 node环境 git GitHub账号 vs code编辑器 Node和Git都安装好后，开始安装 Hexo可执行如下命令安装hexo：&emsp;&emsp;注意：仓库名必须为【your_user_name.github.io】格式一定要对哦；由于网上有很多的github教程就不在介绍了；1$ sudo npm install -g hexo 初始化hexo1$ hexo init &lt;文件夹名称&gt; 生成静态页面1$ hexo g 启动本地服务1$ hexo s 浏览器输入http://localhost:4000 就会出现如下的页面 ： 在vscode 打开项目，配置Github12345deploy: type: gitrepository: github的地址branch: masterzh注意 以上冒号后面要有空格 部署到Github12345$ cd &lt;文件夹名称&gt;$ hexo g$ sudo npm install hexo-deployer-git --save$ hexo d输入github得用户名和密码 查看效果 每次部署的步骤，可按以下三步来进行:hexo clean ==&gt; hexo g==&gt;hexo d Hexo常用的命令 hexo new “postName” #新建文章 hexo new page “pageName” #新建页面 hexo g#生成静态页面至public目录 hexo s #开启预览访问端口（默认端口4000，’ctrl + c’关闭server） hexo d #将.deploy目录部署到GitHub hexo help #查看帮助 hexo version #查看Hexo的版本 参考文献常用命令Hexo官网Hexo教程 完]]></content>
   </entry>
 </search>
